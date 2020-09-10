@@ -18,6 +18,10 @@ class ContactPage extends React.Component {
     };
   }
 
+  inputHandler = (event) => {
+    this.setState({ [event.target.name]: event.target.value });
+  };
+
   handleChange = (e) => {
     const target = e.target;
 
@@ -32,9 +36,12 @@ class ContactPage extends React.Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
+    // makes 'this' accessible by emailjs' promise
+    var self = this;
 
     this.setState({ emailSent: true });
 
+    console.log(e.target);
     var template_params = {
       name: this.state.name,
       email: this.state.email,
@@ -46,40 +53,19 @@ class ContactPage extends React.Component {
     let TEMPLATE_ID = "template_j6k8yof";
 
     emailjs
-      .send("default_service", TEMPLATE_ID, template_params, API_KEY)
+      .send("service_vuez2ur", TEMPLATE_ID, template_params, API_KEY)
       .then(function (response) {
+        console.log(response);
         if (response.status === 200) {
-          this;
+          console.log(self);
+          self.setState({ emailSent: true, disabled: true });
+          console.log("done");
+        } else {
+          // this.setState({ emailSent: false, disabled: true });
+          console.log("no worky");
         }
       });
-
-    // // preventing someone to contact twice
-    // this.setState({
-    //   disabled: true,
-    // });
-
-    // Axios.post("http://localhost:3030/api/email", this.state)
-    //   .then((res) => {
-    //     if (res.data.success) {
-    //       this.setState({
-    //         disabled: false,
-    //         emailSent: true,
-    //       });
-    //     } else {
-    //       this.setState({
-    //         disabled: false,
-    //         emailSent: false,
-    //       });
-    //     }
-    //   })
-    //   .catch((err) => {
-    //     console.log("error", err);
-
-    //     this.setState({
-    //       disable: false,
-    //       emailSent: false,
-    //     });
-    //   });
+    e.target.reset();
   };
 
   render() {
@@ -96,7 +82,7 @@ class ContactPage extends React.Component {
                 name="name"
                 type="text"
                 value={this.state.name}
-                onChange={this.handleChange}
+                onChange={this.inputHandler}
               />
             </Form.Group>
 
@@ -107,7 +93,7 @@ class ContactPage extends React.Component {
                 name="email"
                 type="email"
                 value={this.state.email}
-                onChange={this.handleChange}
+                onChange={this.inputHandler}
               />
             </Form.Group>
 
@@ -115,11 +101,12 @@ class ContactPage extends React.Component {
               <Form.Label htmlFor="message">Message</Form.Label>
               <Form.Control
                 id="message"
+                required
                 name="message"
                 as="textarea"
                 rows="3"
                 value={this.state.message}
-                onChange={this.handleChange}
+                onChange={this.inputHandler}
               />
             </Form.Group>
 
