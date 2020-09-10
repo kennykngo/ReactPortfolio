@@ -36,8 +36,6 @@ class ContactPage extends React.Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
-    // makes 'this' accessible by emailjs' promise
-    var self = this;
 
     this.setState({ emailSent: true });
 
@@ -54,19 +52,25 @@ class ContactPage extends React.Component {
 
     emailjs
       .send("service_vuez2ur", TEMPLATE_ID, template_params, API_KEY)
-      .then(function (response) {
+      .then((response) => {
+        console.log("this", this);
         console.log(response);
         if (response.status === 200) {
-          console.log(self);
-          self.setState({ emailSent: true, disabled: true });
+          this.setState({ emailSent: true, disabled: true });
+          this.resetForm();
           console.log("done");
         } else {
-          // this.setState({ emailSent: false, disabled: true });
+          this.setState({ emailSent: false, disabled: true });
+          this.resetForm();
           console.log("no worky");
         }
       });
     e.target.reset();
   };
+
+  resetForm() {
+    this.setState({ name: "", email: "", message: "" });
+  }
 
   render() {
     return (
