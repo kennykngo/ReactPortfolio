@@ -1,15 +1,16 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Container from "react-bootstrap/Container";
-import Navbar from "react-bootstrap/Navbar";
 // import NavbarBrand from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
-import "./App.css";
+import Navbar from "react-bootstrap/Navbar";
+import { Link, Route, BrowserRouter as Router } from "react-router-dom";
 
 import Footer from "./components/Footer";
-import HomePage from "./pages/HomePage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
+import HomePage from "./pages/HomePage";
+
+import "./App.css";
 
 // allows for state
 // Main component has everything. Don't want to have stateful components everywhere since might be issues with predictability
@@ -25,7 +26,7 @@ class App extends React.Component {
       ],
       home: {
         title: "Be Ready",
-        subTitle: "Projects that make a difference",
+        subTitle: "Be comfortable being uncomfortable",
         text: "Checkout my projects below",
       },
       about: {
@@ -40,8 +41,14 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <Container className="p-0" fluid={true}>
-          <Navbar className="border-bottom" bg="transparent" expand="lg">
+        <Container className="p-0" fluid={true} d-flex>
+          <Navbar
+            sticky="top"
+            collapseOnSelect
+            className="border-bottom color-nav"
+            // bg="transparent"
+            expand="lg"
+          >
             <Navbar.Brand>Kenny Ngo</Navbar.Brand>
 
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />
@@ -53,7 +60,7 @@ class App extends React.Component {
                 <Link className="nav-link" to="/about">
                   About
                 </Link>
-                <Link className="nav-link" to="/">
+                <Link className="nav-link" to="/contact">
                   Contact
                 </Link>
               </Nav>
@@ -83,7 +90,7 @@ class App extends React.Component {
             render={() => <ContactPage title={this.state.contact.title} />}
           />
 
-          <Footer />
+          <Footer sticky="bottom" />
         </Container>
       </Router>
     );

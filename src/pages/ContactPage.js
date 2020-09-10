@@ -18,10 +18,6 @@ class ContactPage extends React.Component {
     };
   }
 
-  inputHandler = (event) => {
-    this.setState({ [event.target.name]: event.target.value });
-  };
-
   handleChange = (e) => {
     const target = e.target;
 
@@ -32,6 +28,10 @@ class ContactPage extends React.Component {
     this.setState({
       [name]: val,
     });
+  };
+
+  inputHandler = (event) => {
+    this.setState({ [event.target.name]: event.target.value });
   };
 
   handleSubmit = (e) => {
