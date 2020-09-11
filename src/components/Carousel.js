@@ -7,6 +7,9 @@ import Card from "../components/Card";
 import inspirePoster from "../assets/images/KNgo_DES325_Poster.png";
 import weatherAPI from "../assets/images/Screen Shot 2020-09-04 at 2.53.35 PM.png";
 import pokemonTrade from "../assets/images/Screen Shot 2020-09-04 at 4.22.50 PM.png";
+import planetApp from "../assets/images/Screen Shot 2020-09-11 at 12.53.30 PM.png";
+import talkingBookCover from "../assets/images/Screen Shot 2020-09-11 at 3.19.03 PM.png";
+import mumbleApp from "../assets/images/Mumble.png";
 
 class Carousel extends React.Component {
   constructor(props) {
@@ -15,11 +18,10 @@ class Carousel extends React.Component {
       items: [
         {
           id: 0,
-          title: "Graphic Design: Inspire Poster",
-          subTitle: "Reduction of an image, designed into a poster",
-          imgSrc: inspirePoster,
-          link:
-            "https://www.behance.net/gallery/80015439/Redux-Poster-Imagination-is-Evolution",
+          title: "Mumble (Coming Soon)",
+          subTitle: "A dating app for introverts",
+          imgSrc: mumbleApp,
+          link: "https://pokemon-trade-heroku.herokuapp.com/",
           selected: false,
         },
         {
@@ -36,6 +38,34 @@ class Carousel extends React.Component {
           subTitle: "Log your Pokemon and chat with other trainers",
           imgSrc: pokemonTrade,
           link: "https://pokemon-trade-heroku.herokuapp.com/",
+          selected: false,
+        },
+        {
+          id: 3,
+          title: "UX Design: Planet",
+          subTitle: "Desiging an app to tackle procrastination",
+          imgSrc: planetApp,
+          link:
+            "https://www.behance.net/gallery/97538259/Planet-Tackling-Emotional-Procrastination",
+          selected: false,
+        },
+        {
+          id: 4,
+          title: "GD: Talking to Strangers",
+          subTitle:
+            "A book cover redesign for the book, 'Talking to Strangers'",
+          imgSrc: talkingBookCover,
+          link:
+            "https://www.behance.net/gallery/89494599/Book-Cover-Design-Talking-to-Strangers",
+          selected: false,
+        },
+        {
+          id: 5,
+          title: "Graphic Design: Redux Poster",
+          subTitle: "Reduction of an image, designed into a poster",
+          imgSrc: inspirePoster,
+          link:
+            "https://www.behance.net/gallery/80015439/Redux-Poster-Imagination-is-Evolution",
           selected: false,
         },
       ],

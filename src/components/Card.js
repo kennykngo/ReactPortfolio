@@ -16,7 +16,8 @@ function Card(props) {
       {props.item.selected && (
         <CardInfo
           title={props.item.title}
-          subTitle={props.item.subTItle}
+          subTitle={props.item.subTitle}
+          fluid={true}
           link={props.item.link}
         />
       )}
