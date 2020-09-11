@@ -11,12 +11,6 @@ function Content(props) {
       <Row className="justify-content-center">
         <Col md={8}>
           {/* require is needed to display image */}
-          <Image
-            src={require("../assets/images/KNgo_DES325_Poster.png")}
-            alt="kenny-image"
-            className="small-img"
-            rounded
-          />
           {/* what ever you pass, it'll automatically pass components inside the structure */}
           {props.children}
         </Col>

@@ -4,8 +4,9 @@ import Row from "react-bootstrap/Row";
 
 import Card from "../components/Card";
 
-import devGrub from "../assets/images/KNgo_DES325_Poster.png";
+import inspirePoster from "../assets/images/KNgo_DES325_Poster.png";
 import weatherAPI from "../assets/images/Screen Shot 2020-09-04 at 2.53.35 PM.png";
+import pokemonTrade from "../assets/images/Screen Shot 2020-09-04 at 4.22.50 PM.png";
 
 class Carousel extends React.Component {
   constructor(props) {
@@ -14,10 +15,11 @@ class Carousel extends React.Component {
       items: [
         {
           id: 0,
-          title: "Dev Grub",
-          subTitle: "The cookbook for developers",
-          imgSrc: devGrub,
-          link: "https://devgrub.com",
+          title: "Graphic Design: Inspire Poster",
+          subTitle: "Reduction of an image, designed into a poster",
+          imgSrc: inspirePoster,
+          link:
+            "https://www.behance.net/gallery/80015439/Redux-Poster-Imagination-is-Evolution",
           selected: false,
         },
         {
@@ -25,15 +27,15 @@ class Carousel extends React.Component {
           title: "Weather Forecast",
           subTitle: "5-day weather report",
           imgSrc: weatherAPI,
-          link: "https://devgrub.com",
+          link: "https://kennykngo.github.io/bcs_weatherApp/",
           selected: false,
         },
         {
           id: 2,
-          title: "Dev Grub",
-          subTitle: "The cookbook for developers",
-          imgSrc: devGrub,
-          link: "https://devgrub.com",
+          title: "Pokemon Trade Center",
+          subTitle: "Log your Pokemon and chat with other trainers",
+          imgSrc: pokemonTrade,
+          link: "https://pokemon-trade-heroku.herokuapp.com/",
           selected: false,
         },
       ],
@@ -58,7 +60,6 @@ class Carousel extends React.Component {
 
   makeItems = (items) => {
     return items.map((item) => {
-      console.log(item);
       return (
         <Card
           item={item}
