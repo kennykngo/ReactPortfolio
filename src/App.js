@@ -25,7 +25,7 @@ class App extends React.Component {
         { title: "Contact", path: "/contact" },
       ],
       home: {
-        title: "Be Ready",
+        title: "Be Yourself",
         subTitle: "Be comfortable being uncomfortable",
         text: "Checkout my projects below",
       },
@@ -41,7 +41,7 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <Container className="p-0" fluid={true} d-flex>
+        <Container className="p-0" fluid={true}>
           <Navbar
             sticky="top"
             collapseOnSelect
