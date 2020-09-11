@@ -9,13 +9,14 @@ function AboutPage(props) {
       <Hero title={props.title} />
 
       <Content>
-        {" "}
         <Image
-          src={require("../assets/images/KNgo_DES325_Poster.png")}
+          src={require("../assets/images/kenny_ngo_headshot.jpg")}
           alt="kenny-image"
           className="small-img"
+          fluid={true}
           rounded
-        />
+        />{" "}
+        <hr />
         <p>
           Hello, my name is Kenny! I'm a full stack developer specializing in
           UX. I plan to one day be great at coding and eventually become a
