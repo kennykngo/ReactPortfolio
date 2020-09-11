@@ -3,6 +3,7 @@ import Container from "react-bootstrap/esm/Container";
 import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
 import { Image } from "react-bootstrap";
+import "../assets/styles/Content.css";
 
 function Content(props) {
   return (
@@ -13,6 +14,8 @@ function Content(props) {
           <Image
             src={require("../assets/images/KNgo_DES325_Poster.png")}
             alt="kenny-image"
+            className="small-img"
+            rounded
           />
           {/* what ever you pass, it'll automatically pass components inside the structure */}
           {props.children}
