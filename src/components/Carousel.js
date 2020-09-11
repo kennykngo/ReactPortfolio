@@ -5,6 +5,7 @@ import Row from "react-bootstrap/Row";
 import Card from "../components/Card";
 
 import devGrub from "../assets/images/KNgo_DES325_Poster.png";
+import weatherAPI from "../assets/images/Screen Shot 2020-09-04 at 2.53.35 PM.png";
 
 class Carousel extends React.Component {
   constructor(props) {
@@ -21,9 +22,9 @@ class Carousel extends React.Component {
         },
         {
           id: 1,
-          title: "Dev Grub",
-          subTitle: "The cookbook for developers",
-          imgSrc: devGrub,
+          title: "Weather Forecast",
+          subTitle: "5-day weather report",
+          imgSrc: weatherAPI,
           link: "https://devgrub.com",
           selected: false,
         },
@@ -57,6 +58,7 @@ class Carousel extends React.Component {
 
   makeItems = (items) => {
     return items.map((item) => {
+      console.log(item);
       return (
         <Card
           item={item}

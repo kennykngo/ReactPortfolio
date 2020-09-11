@@ -21,6 +21,7 @@ code {
   width: 300px;
   height: 480px;
   box-shadow: 0px 0px 3 px 1px #ccc;
+  object-fit: cover;
 }
 
 .g-card-info {
