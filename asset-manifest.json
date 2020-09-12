@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/ReactPortfolio/static/css/main.34be61b1.chunk.css",
+    "main.js": "/ReactPortfolio/static/js/main.0d11f978.chunk.js",
+    "main.js.map": "/ReactPortfolio/static/js/main.0d11f978.chunk.js.map",
+    "runtime-main.js": "/ReactPortfolio/static/js/runtime-main.f3c64b5a.js",
+    "runtime-main.js.map": "/ReactPortfolio/static/js/runtime-main.f3c64b5a.js.map",
+    "static/css/2.8aa5a7f8.chunk.css": "/ReactPortfolio/static/css/2.8aa5a7f8.chunk.css",
+    "static/js/2.8e3c4a04.chunk.js": "/ReactPortfolio/static/js/2.8e3c4a04.chunk.js",
+    "static/js/2.8e3c4a04.chunk.js.map": "/ReactPortfolio/static/js/2.8e3c4a04.chunk.js.map",
+    "index.html": "/ReactPortfolio/index.html",
+    "precache-manifest.8245a9fcc5be66afd463b1f189c90f1e.js": "/ReactPortfolio/precache-manifest.8245a9fcc5be66afd463b1f189c90f1e.js",
+    "service-worker.js": "/ReactPortfolio/service-worker.js",
+    "static/css/2.8aa5a7f8.chunk.css.map": "/ReactPortfolio/static/css/2.8aa5a7f8.chunk.css.map",
+    "static/css/main.34be61b1.chunk.css.map": "/ReactPortfolio/static/css/main.34be61b1.chunk.css.map",
+    "static/js/2.8e3c4a04.chunk.js.LICENSE.txt": "/ReactPortfolio/static/js/2.8e3c4a04.chunk.js.LICENSE.txt",
+    "static/media/KNgo_DES325_Poster.png": "/ReactPortfolio/static/media/KNgo_DES325_Poster.e0ad72cd.png",
+    "static/media/Mumble.png": "/ReactPortfolio/static/media/Mumble.02b6f966.png",
+    "static/media/Screen Shot 2020-09-04 at 2.53.35 PM.png": "/ReactPortfolio/static/media/Screen Shot 2020-09-04 at 2.53.35 PM.8997cf27.png",
+    "static/media/Screen Shot 2020-09-04 at 4.22.50 PM.png": "/ReactPortfolio/static/media/Screen Shot 2020-09-04 at 4.22.50 PM.9833372e.png",
+    "static/media/Screen Shot 2020-09-11 at 12.53.30 PM.png": "/ReactPortfolio/static/media/Screen Shot 2020-09-11 at 12.53.30 PM.001a0232.png",
+    "static/media/Screen Shot 2020-09-11 at 3.19.03 PM.png": "/ReactPortfolio/static/media/Screen Shot 2020-09-11 at 3.19.03 PM.a66f9226.png",
+    "static/media/kenny_ngo_headshot.jpg": "/ReactPortfolio/static/media/kenny_ngo_headshot.d8112681.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f3c64b5a.js",
+    "static/css/2.8aa5a7f8.chunk.css",
+    "static/js/2.8e3c4a04.chunk.js",
+    "static/css/main.34be61b1.chunk.css",
+    "static/js/main.0d11f978.chunk.js"
+  ]
+}
