@@ -3,7 +3,7 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 
-import Content from "../components/Content";
+import Content2 from "../components/Content2";
 import Hero from "../components/Hero";
 
 class ContactPage extends React.Component {
@@ -77,7 +77,7 @@ class ContactPage extends React.Component {
       <div>
         <Hero title={this.props.title} />
 
-        <Content>
+        <Content2>
           <Form onSubmit={this.handleSubmit}>
             <Form.Group>
               <Form.Label htmlFor="full-name">Full Name</Form.Label>
@@ -131,7 +131,7 @@ class ContactPage extends React.Component {
               <p className="d-inline err-msg">Email Not Sent</p>
             )}
           </Form>
-        </Content>
+        </Content2>
       </div>
     );
   }

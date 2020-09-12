@@ -21,7 +21,7 @@ class Carousel extends React.Component {
           title: "Mumble (Coming Soon)",
           subTitle: "A dating app for introverts",
           imgSrc: mumbleApp,
-          link: "https://pokemon-trade-heroku.herokuapp.com/",
+          link: "https://google.com",
           selected: false,
         },
         {

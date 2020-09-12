@@ -4,11 +4,11 @@ import Row from "react-bootstrap/esm/Row";
 import Col from "react-bootstrap/esm/Col";
 import "../assets/styles/Content.css";
 
-function Content(props) {
+function Content2(props) {
   return (
     <Container fluid={true}>
       <Row className="justify-content-center">
-        <Col md={8} className="d-flex align-items-center flex-column">
+        <Col md={8}>
           {/* what ever you pass, it'll automatically pass components inside the structure */}
           {props.children}
         </Col>
@@ -17,4 +17,4 @@ function Content(props) {
   );
 }
 
-export default Content;
+export default Content2;
